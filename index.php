@@ -6,10 +6,9 @@ define('ROOT', __DIR__);
 require ROOT . '/helpers/functions.php';
 
 
-# To add autoloading composer
+// Autoloading
+require ROOT . '/vendor/autoload.php';
 
-# Load classes
-require ROOT .'/src/FileSytem.php';
 
 
 $file = new \Framework\FileSytem(ROOT);

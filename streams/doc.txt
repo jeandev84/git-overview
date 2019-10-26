@@ -14,8 +14,11 @@ $ git status
 $ git add "file-you-want-to-add"
 $ git add .
 $ git add --all
+$ git add src/ArrayCollection.php
 
 
+# Commit
+$ git commit -m "Initial first commit my project"
 
 
 
