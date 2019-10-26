@@ -21,6 +21,25 @@ $ git add src/ArrayCollection.php
 $ git commit -m "Initial first commit my project"
 
 
+# Tag
+$ git tag "version_0.1"
+
+# Create ne branch
+$ git branch person_class
+
+# See all availbales branch
+$ git branch
+
+
+# Switch on to the concret branch
+$ git checkout nameOfBranch
+ex: git checkout person_class
+
+$ git checkout master
+
+# Git Merge (Merge data)
+$ git merge person_class
+
 
 
 
