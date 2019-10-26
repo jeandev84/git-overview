@@ -1,0 +1,170 @@
+jeandev@jeandev-Lenovo-G580:/var/www$ cd git-overview
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git init
+Инициализирован пустой репозиторий Git в /var/www/git-overview/.git/
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+
+Еще нет коммитов
+
+Изменения, которые будут включены в коммит:
+  (используйте «git rm --cached <файл>…», чтобы убрать из индекса)
+
+        новый файл:    doc.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      doc.txt
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+        helpers/
+        index.php
+        src/
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+
+Еще нет коммитов
+
+Изменения, которые будут включены в коммит:
+  (используйте «git rm --cached <файл>…», чтобы убрать из индекса)
+
+        новый файл:    .gitignore
+        новый файл:    streams/doc.txt
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      .gitignore
+        изменено:      streams/doc.txt
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+        helpers/
+        index.php
+        src/
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git add --all
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+
+Еще нет коммитов
+
+Изменения, которые будут включены в коммит:
+  (используйте «git rm --cached <файл>…», чтобы убрать из индекса)
+
+        новый файл:    .gitignore
+        новый файл:    helpers/functions.php
+        новый файл:    index.php
+        новый файл:    src/FileSytem.php
+        новый файл:    streams/doc.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git commit -m "Initial project commit"
+[master (корневой коммит) 06fb734] Initial project commit
+ 5 files changed, 107 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 helpers/functions.php
+ create mode 100644 index.php
+ create mode 100644 src/FileSytem.php
+ create mode 100644 streams/doc.txt
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+нечего коммитить, нет изменений в рабочем каталоге
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    app/Entity/BaseEntity.php
+        новый файл:    app/Entity/Post.php
+        новый файл:    app/Repository/PostRepository.php
+        новый файл:    src/ArrayCollection.php
+        новый файл:    src/Exceptions/InvalidItem.php
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+        изменено:      app/Entity/BaseEntity.php
+        изменено:      app/Entity/Post.php
+        изменено:      app/Repository/PostRepository.php
+        изменено:      index.php
+        изменено:      src/ArrayCollection.php
+        изменено:      src/Exceptions/InvalidItem.php
+        изменено:      streams/doc.txt
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+        composer.json
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git add .
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+Изменения, которые будут включены в коммит:
+  (используйте «git reset HEAD <файл>…», чтобы убрать из индекса)
+
+        новый файл:    app/Entity/BaseEntity.php
+        новый файл:    app/Entity/Post.php
+        новый файл:    app/Repository/PostRepository.php
+        новый файл:    composer.json
+        изменено:      index.php
+        новый файл:    src/ArrayCollection.php
+        новый файл:    src/Exceptions/InvalidItem.php
+        изменено:      streams/doc.txt
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ commit -m "Add new entities and repositories classes"
+commit: команда не найдена
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git commit -m "Add new entities and repositories classes"
+[master 9adafc5] Add new entities and repositories classes
+ 8 files changed, 206 insertions(+), 3 deletions(-)
+ create mode 100644 app/Entity/BaseEntity.php
+ create mode 100644 app/Entity/Post.php
+ create mode 100644 app/Repository/PostRepository.php
+ create mode 100644 composer.json
+ create mode 100644 src/ArrayCollection.php
+ create mode 100644 src/Exceptions/InvalidItem.php
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git status
+На ветке master
+нечего коммитить, нет изменений в рабочем каталоге
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git remote streams origin https://github.com/jeandev84/git-overview.git
+error: Неизвестная подкоманда: streams
+использование: git remote [-v | --verbose]
+   или: git remote add [-t <ветка>] [-m <мастер-ветка>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <имя> <адрес>
+   или: git remote rename <старое-название> <новое-название>
+   или: git remote remove <имя>
+   или: git remote set-head <имя> (-a | --auto | -d | --delete | <ветка>)
+   или: git remote [-v | --verbose] show [-n] <имя>
+   или: git remote prune [-n | --dry-run] <имя>
+   или: git remote [-v | --verbose] update [-p | --prune] [(<группа> | <имя-внешнего-репозитория>)…]
+   или: git remote set-branches [--add] <имя> <ветка>…
+   или: git remote get-url [--push] [--all] <имя>
+   или: git remote set-url [--push] <имя> <новый-url> [<старый-url>]
+   или: git remote set-url --add <имя> <новый-url>
+   или: git remote set-url --delete <имя> <url>
+
+    -v, --verbose         быть многословнее; должно стоять перед подкомандой
+
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git remote add streams https://github.com/jeandev84/git-overview.git
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git remote
+streams
+jeandev@jeandev-Lenovo-G580:/var/www/git-overview$ git push streams master
+Username for 'https://github.com': jeandev84
+Password for 'https://jeandev84@github.com':
+Перечисление объектов: 26, готово.
+Подсчет объектов: 100% (26/26), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (20/20), готово.
+Запись объектов: 100% (26/26), 3.55 KiB | 909.00 KiB/s, готово.
+Всего 26 (изменения 1), повторно использовано 0 (изменения 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/jeandev84/git-overview.git
+ * [new branch]      master -> master

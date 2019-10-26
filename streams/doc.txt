@@ -20,6 +20,38 @@ $ git add src/ArrayCollection.php
 # Commit
 $ git commit -m "Initial first commit my project"
 
+# Add data to repository distance
+$ git remote add "give-name-of-repository-if-you-want" link-of-repository-distance
+$ git remote add "jeandev84" https://github.com/jeandev84/git-overview.git
+
+# See defined repository
+$ git remote
+
+By Default we have :
+$ git remote add origin https://github.com/jeandev84/git-overview.git
+
+
+# Push or Add data to repository defined repository
+$ git push jeandev84 master
+$ git push origin master
+
+
+# Create new version for your project
+
+$ git tag "version_1.0"
+
+# Create new branch
+$ git branch person_class
+
+# See all branchs
+$ git branch
+-------------------
+* master
+person_class
+
+# Switch On to concret branch
+$ git checkout person_class
+
 
 
 
