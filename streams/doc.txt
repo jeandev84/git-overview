@@ -73,6 +73,13 @@ $ git checkout master
 $ git merge person_class
 
 
+# Delete Branch
+$ git branch -D person_class
 
+# See all commit (Log)
+$ git log
+
+# состояние репозитория как она и была
+$ git push jeandev84 master
 
 
