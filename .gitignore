@@ -1,0 +1,7 @@
+.idea/*
+vendor/
+
+*.class (don't use all files used extensions .class)
+*.extension1
+*.extension2
+*.extension3

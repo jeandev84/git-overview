@@ -1,0 +1,24 @@
+# Initial project
+$ git init
+
+# Set name and email
+$ git config --global user.name "Jean-Claude"
+$ git config --global user.email "jeanyao@ymail.com"
+
+
+# Get status git
+$ git status
+
+
+# Add files
+$ git add "file-you-want-to-add"
+$ git add .
+$ git add --all
+
+
+
+
+
+
+
+
